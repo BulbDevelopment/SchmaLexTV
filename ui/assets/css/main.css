@@ -1,0 +1,623 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+textarea { outline: none; border: none; resize: none; }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.interface {
+    display: flex;
+    width: 91.94vmin;
+    height: 61.30vmin;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.76vmin;
+    overflow: hidden;
+}
+
+.interface-left {
+    position: relative;
+    width: 64.81vmin;
+    height: 61.30vmin;
+
+    border-radius: 2.78vmin;
+    background: rgba(5, 17, 26, 0.95);
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.39vmin;
+}
+
+.interface-right {
+    position: relative;
+    width: 25.37vmin;
+    height: 61.30vmin;
+
+    border-radius: 2.78vmin;
+    background: rgba(5, 17, 26, 0.95);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interface-left-head {
+    position: relative;
+    width: 54.81vmin;
+    height: 7.50vmin;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interface-left-head-left {
+    position: relative;
+    width: auto;
+    height: 7.50vmin;
+    display: flex;
+    padding-right: 2%;
+}
+
+.interface-left-head-right {
+    position: relative;
+    width: auto;
+    height: 4.72vmin;
+
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.30vmin;
+}
+
+.interface-left-head-left h1,
+.interface-left-head-left h2 {
+    font-family: "Druk Cyr";
+    font-size: 5.93vmin;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.interface-left-head-left h1 {
+    height: 100%;
+    background: radial-gradient(#34A4EB, #34A4EB80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.interface-left-head-left h2 {
+    height: 100%;
+    background: radial-gradient(#FFFFFF, #FFFFFF30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.interface-left-head-right-name {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+.interface-left-head-right-name h1,
+.interface-left-head-right-name p {
+    font-family: "Druk Cyr";
+    font-size: 1.85vmin;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.03vmin;
+    margin-top: 0%;
+    text-align: right;
+}
+
+.interface-left-head-right-name h1 {
+    background: radial-gradient(#FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.interface-left-head-right-name p {
+    background: radial-gradient(#BBFF4B, #BBFF4B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: -12%;
+}
+
+.interface-left-head-right-pfp {
+    position: relative;
+    width: 4.72vmin;
+    height: 4.72vmin;
+
+    border-radius: 0.37vmin;
+    background: rgba(52, 164, 235, 0.18);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-head-right-pfp img {
+    width: 3.61vmin;
+    border-radius: 0.28vmin;
+}
+
+.interface-left-head-right-close {
+    position: relative;
+    width: 2.41vmin;
+    height: 2.41vmin;
+
+    border-radius: 0.37vmin;
+    border: .09vmin solid #FF2F61;
+    background: radial-gradient(69.23% 69.23% at 50.00% 50.00%, #FF2F61 0%, #5E0C20 100%);
+    box-shadow: 0 0 3.52vmin 0 #FF2F61;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-head-right-close img {
+    width: 0.93vmin;
+}
+
+.interface-left-input {
+    position: relative;
+    width: 55.37vmin;
+    height: 22vmin;
+
+    border-radius: 0.28vmin;
+    background: radial-gradient(80.37% 80.37% at 50.00% 50.00%, rgba(3, 9, 14, 0.72) 0%, rgba(3, 9, 14, 0.35) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmin;
+}
+
+.interface-left-input textarea {
+    position: relative;
+    width: 52.31vmin;
+    height: 15.83vmin;
+
+    color: rgba(255, 255, 255, 1);
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 500;
+
+    border: none;
+    background: none;
+}
+
+.interface-left-input-bottom {
+    position: relative;
+    width: 12.78vmin;
+    height: 2.22vmin;
+    margin-left: auto;
+    margin-right: 2.5%;
+    display: flex;
+}
+
+.interface-left-input-bottom-left,
+.interface-left-input-bottom-right {
+    position: relative;
+    width: 6.39vmin;
+    height: 2.22vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-input-bottom-left {
+    background: radial-gradient(83.33% 83.33% at 50.00% 50.00%, rgba(173, 173, 173, 0.25) 0%, rgba(99, 99, 99, 0.25) 100%);
+}
+
+.interface-left-input-bottom-right {
+    background: radial-gradient(83.33% 83.33% at 50.00% 50.00%, #34A4EB 0%, #185780 100%);
+    box-shadow: 0 0.37vmin 3.06vmin 0 rgba(52, 164, 235, 0.55);
+}
+
+.interface-left-input-bottom-left h1,
+.interface-left-input-bottom-right h1 {
+    color: #FFF;
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 500;
+}
+
+.interface-left-price {
+    position: relative;
+    width: 55.37vmin;
+    height: 4.63vmin;
+    display: flex;
+}
+
+.interface-left-price-left,
+.interface-left-price-right {
+    position: relative;
+    width: 27.69vmin;
+    height: 4.63vmin;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interface-left-price-left {
+    background: radial-gradient(89.00% 89.00% at 50.00% 50.00%, rgba(187, 255, 75, 0.08) 0%, rgba(187, 255, 75, 0.00) 100%);
+
+}
+
+.interface-left-price-right {
+    background: radial-gradient(80% 80.00% at 50.00% 50%, rgba(75, 255, 244, 0.08) 0%, rgba(75, 255, 244, 0.00) 100%);
+}
+
+.interface-left-price-left-head,
+.interface-left-price-right-head {
+    position: relative;
+    width: 27.69vmin;
+    height: 1.76vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-price-left-head {
+    background: rgba(187, 255, 75, 0.15);
+}
+
+.interface-left-price-right-head {
+    background: rgba(75, 255, 244, 0.15);
+}
+
+.interface-left-price-left-head h1,
+.interface-left-price-right-head h1 {
+    color: #FFF;
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 500;
+}
+
+.interface-left-price-left-text h1,
+.interface-left-price-right-text h1 {
+    font-family: "Gilroy";
+    font-size: 1.48vmin;
+    font-weight: 500;
+    margin-top: 15%;
+}
+
+.interface-left-price-left-text h1 {
+    color: #BBFF4B;
+    text-shadow: 0 0.37vmin 1.02vmin 0 rgba(187, 255, 75, 0.55);
+}
+
+.interface-left-price-right-text h1 {
+    color: #4BFFF4;
+    text-shadow: 0 0.37vmin 1.02vmin 0 rgba(75, 255, 244, 0.55);
+}
+
+.interface-left-type {
+    position: relative;
+    width: 55.37vmin;
+    height: 5.28vmin;
+
+    border-radius: 0.28vmin;
+    background: radial-gradient(80.37% 80.37% at 50.00% 50.00%, rgba(3, 9, 14, 0.72) 0%, rgba(3, 9, 14, 0.00) 100%);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.interface-left-type-left {
+    position: relative;
+    width: 34.07vmin;
+    height: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.57vmin;
+}
+
+.interface-left-type-right {
+    position: relative;
+    width: 21.11vmin;
+    height: 100%;
+    display: flex;
+}
+
+.interface-left-type-left-left h1 {
+    font-family: "Druk Cyr";
+    font-size: 1.85vmin;
+    font-style: italic;
+    font-weight: 700;
+
+    background: radial-gradient(#FFFFFF, #FFFFFF60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.interface-left-type-left-right {
+    position: relative;
+    width: 16.30vmin;
+    height: 3.06vmin;
+    background: rgba(0, 0, 0, 0.44);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-type-left-right h1 {
+    width: 7.31vmin;
+    height: 2.31vmin;
+
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background: radial-gradient(94.00% 94.00% at 50.00% 50%, #FF2F61 0%, #73192E 100%);
+    box-shadow: 0 0.37vmin 2.31vmin 0 rgba(252, 47, 96, 0.55);
+    color: #FFF;
+}
+
+.unactive {
+    background: none;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.interface-left-type-right button {
+    position: relative;
+    width: 10.56vmin;
+    height: 5.28vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-left-type-right h1 {
+    color: #FFF;
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 500;
+}
+
+.send {
+    background: radial-gradient(83.33% 83.33% at 50.00% 50.00%, rgba(52, 164, 235, 0.25) 0%, rgba(24, 87, 128, 0.25) 100%);
+    border: .09vmin solid rgba(52, 164, 235);
+}
+
+.cancel {
+    background: radial-gradient(94.00% 94.00% at 50.00% 50%, rgba(255, 47, 97, 0.25) 0%, rgba(115, 25, 46, 0.25) 100%);
+    border: .09vmin solid rgba(255, 47, 97);
+}
+
+.interface-left-info {
+    position: relative;
+    width: 55.37vmin;
+    height: auto;
+
+    border-radius: 0.28vmin;
+    background: radial-gradient(80.37% 80.37% at 50.00% 50.00%, rgba(3, 9, 14, 0.72) 0%, rgba(3, 9, 14, 0.00) 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 2%;
+}
+
+.interface-left-info h1 {
+    font-family: "Druk Cyr";
+    font-size: 1.85vmin;
+    font-style: italic;
+    font-weight: 700;
+    background: radial-gradient(#FFFFFF, #FFFFFF60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 3%;
+}
+
+.interface-left-info p {
+    color: rgba(255, 255, 255, 0.55);
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 400;
+    line-height: 145%;
+    margin-top: -3%;
+    margin-left: 3%;
+}
+
+.interface-right-head h1 {
+    font-family: "Druk Cyr";
+    font-size: 5.93vmin;
+    font-style: italic;
+    font-weight: 700;
+
+    background: radial-gradient(#34A4EB, #34A4EB30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 5%;
+}
+
+.interface-right-scrollcontainer {
+    position: relative;
+    width: 18.70vmin;
+    height: 46.11vmin;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.67vmin;
+    overflow-x: hidden;
+}
+
+.interface-right-scrollcontainer-tile {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.37vmin;
+
+}
+
+.interface-right-scrollcontainer-tile-main {
+    position: relative;
+    width: 18.52vmin;
+    height: auto;
+
+    border-radius: 0.28vmin;
+    background: radial-gradient(80.37% 80.37% at 50.00% 50.00%, rgba(3, 9, 14, 0.72) 0%, rgba(3, 9, 14, 0.35) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.30vmin 0.83vmin;
+}
+
+.interface-right-scrollcontainer-tile-main h1 {
+    width: 83%;
+    color: #FFF;
+    font-family: "Gilroy";
+    font-size: 1.20vmin;
+    font-weight: 400;
+    line-height: 129%;
+}
+
+.interface-right-scrollcontainer-tile-main-side {
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    width: 0.37vmin;
+    height: 2.04vmin;
+    /* text wrap */
+    overflow-wrap: break-word;
+    background: #34A4EB;
+    box-shadow: 0 0 1.39vmin 0 #34A4EB;
+}
+
+.interface-right-scrollcontainer-tile-main-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.37vmin;
+}
+
+.interface-right-scrollcontainer-tile-main-user-top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interface-right-scrollcontainer-tile-userinfo {
+    position: relative;
+    width: 18.52vmin;
+    height: 1.85vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.interface-right-scrollcontainer-tile-userinfo-tile {
+    position: relative;
+    height: 1.85vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.interface-right-scrollcontainer-tile-userinfo-tile-left {
+    position: relative;
+    width: 1.85vmin;
+    height: 1.85vmin;
+
+    background: radial-gradient(83.33% 83.33% at 50.00% 50.00%, #34A4EB 0%, #185780 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface-right-scrollcontainer-tile-userinfo-tile-left img {
+    width: 1.11vmin;
+}
+
+.interface-right-scrollcontainer-tile-userinfo-tile-right {
+    position: relative;
+    height: 1.85vmin;
+
+    background: radial-gradient(83.33% 83.33% at 50.00% 50.00%, rgba(173, 173, 173, 0.25) 0%, rgba(99, 99, 99, 0.25) 100%);
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.interface-right-scrollcontainer-tile-userinfo-tile-right h1 {
+    color: #FFF;
+    font-family: "Gilroy";
+    font-size: 1.11vmin;
+    font-weight: 400;
+}
+
+.interface-left-background svg {
+    position: absolute;
+    width: 64.81vmin;
+    height: 61.30vmin;
+    left: 0%;
+    top: 0%;
+    border-radius: 2.78vmin;
+}
+
+.interface-right-background svg {
+    position: absolute;
+    width: 25.37vmin;
+    height: 61.30vmin;
+    left: 0%;
+    top: 0%;
+
+    border-radius: 2.78vmin;
+}
