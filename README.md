@@ -30,18 +30,32 @@ Players can create professional in-game ads — perfect for roleplay servers wit
 | ⚙️ **Konfigurierbar über `config.lua`**                              | ⚙️ **Easy setup via `config.lua`**                                    |
 | 🌍 **Marker- & NPC-System** für mehr RP-Immersion                    | 🌍 **Marker & NPC-based system** for immersive RP                     |
 | 🔗 **Discord Webhook** – Anzeigen auch extern im Discord möglich     | 🔗 **Discord webhook** – ads can optionally be shown in Discord too   |
+---
+
+## 🆘 Support & Community
+
+| Deutsch 🇩🇪                                                                 | English 🇬🇧                                                                 |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| ❓ Du hast Fragen, brauchst Hilfe oder möchtest Feedback geben?            | ❓ Need help, have questions, or want to leave feedback?                  |
+| 💬 Dann tritt unserem Discord bei und werde Teil der Community!            | 💬 Join our Discord and become part of the community!                     |
+| 📬 **Discord:** [Hier](https://discord.gg/VBfhV8425Q))                     | 📬 **Discord:** [Here](https://discord.gg/VBfhV8425Q))      |
 
 ---
 
-## 📦 Installation
+## 📝 Lizenz | License
 
-### 🇩🇪 Deutsch
 
-1. **Script herunterladen und in deinen Ressourcenordner legen:**
 
-```bash
-cd resources/[esx]
-git clone https://github.com/SchmaLexTV/lifeinvader
+Permission is hereby granted to any person to use, copy, modify, and distribute this software 
+and associated documentation files — **only for private and non-commercial purposes**.
+Sale, commercial use, or redistribution of this software or any parts of it is strictly prohibited.
+The copyright notice and this permission notice must be included in all copies or substantial portions of the software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. 
+THE AUTHORS ARE NOT LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF THE SOFTWARE.
+
+© 2025 **BulbDev**
+
+
 
 
 
